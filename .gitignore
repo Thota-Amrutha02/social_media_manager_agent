@@ -1,0 +1,27 @@
+cat > .gitignore << 'EOF'
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+instance/
+
+# Node / React (if present)
+node_modules/
+build/
+dist/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
+EOF
