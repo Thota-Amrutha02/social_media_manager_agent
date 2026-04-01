@@ -2,8 +2,6 @@
 requests==2.31.0
 python-dotenv==1.0.1
 flask
-requests
-python-dotenv
 apscheduler
 openai
 Flask-APScheduler
