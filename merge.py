@@ -9,6 +9,9 @@ from PIL import Image
 from dotenv import load_dotenv
 from openai import OpenAI
 from datetime import datetime
+from auth_routes import auth_bp
+
+
 
 
 # ---- Load environment ----
@@ -436,6 +439,11 @@ def get_saved_projects():
         return jsonify(data)
     return jsonify([])
 
+@app.route("/")
+def home():
+    return "Backend is running 🚀"
+
+app.register_blueprint(auth_bp, url_prefix="/auth")
 
 # ---------- Main ----------
 if __name__ == "__main__":
