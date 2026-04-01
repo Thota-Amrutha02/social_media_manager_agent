@@ -8,4 +8,4 @@ apscheduler
 openai
 Flask-APScheduler
 flask-cors
-
+gunicorn
