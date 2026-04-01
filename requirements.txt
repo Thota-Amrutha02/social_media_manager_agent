@@ -7,3 +7,4 @@ openai
 Flask-APScheduler
 flask-cors
 gunicorn
+Pillow
